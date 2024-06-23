@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DINO</title>
     <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="preload" href="/imgs/[desert] fast bg.png" as="image" />
+    <link rel="preload" href="/imgs/[desert] slow bg.png" as="image" />
+    <link rel="preload" href="/imgs/[desert] static bg.png" as="image" />
+    <link rel="preload" href="/imgs/[forest] fast background.png" as="image" />
+    <link
+      rel="preload"
+      href="/imgs/[forest] medium speed background.png"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/imgs/[forest] static background.png"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/imgs/[forest] static background.png"
+      as="image"
+    />
+    <link rel="preload" href="/imgs/cactus.png" as="image" />
+    <link rel="preload" href="/imgs/dino-jump.png" as="image" />
+    <link rel="preload" href="/imgs/dino-lose.png" as="image" />
+    <link rel="preload" href="/imgs/dino-run-0.png" as="image" />
+    <link rel="preload" href="/imgs/dino-stationary.png" as="image" />
+    <link rel="preload" href="/imgs/dip.png" as="image" />
+    <link rel="preload" href="/imgs/doggrun-1.png" as="image" />
+    <link rel="preload" href="/imgs/doggrun-2.png" as="image" />
+    <link rel="preload" href="/imgs/flying berserk covid.png" as="image" />
+    <link rel="preload" href="/imgs/flying clown balloon.png" as="image" />
+    <link rel="preload" href="/imgs/flying cool covid.png" as="image" />
+    <link rel="preload" href="/imgs/flying dildo.png" as="image" />
+    <link rel="preload" href="/imgs/flying retard covid.png" as="image" />
+    <link rel="preload" href="/imgs/flying sexy ghost.png" as="image" />
+    <link rel="preload" href="/imgs/ground.png" as="image" />
+    <link rel="preload" href="/imgs/jump.png" as="image" />
+    <link rel="preload" href="/imgs/sharks.png" as="image" />
+    <link rel="preload" href="/imgs/shit.png" as="image" />
+    <link rel="preload" href="/imgs/signs.png" as="image" />
+    <link rel="preload" href="/imgs/trump-1.png" as="image" />
+    <link rel="preload" href="/imgs/trump-2.png" as="image" />
+    <link rel="preload" href="/imgs/wall.png" as="image" />
+
     <script src="/js/game/script.js" type="module"></script>
   </head>
   <body>
@@ -28,14 +71,30 @@
     </div>
     <div class="world" data-world>
       <div class="start-screen" data-start-screen>Press Any Key To Start</div>
-      <img src="imgs/[forest] slow background.png" class="ground" data-ground />
-      <img src="imgs/[forest] slow background.png" class="ground" data-ground />
-      <img src="imgs/dino-stationary.png" class="dino" data-dino />
+      <img
+        preload="metadata"
+        src="imgs/[forest] slow background.png"
+        class="ground"
+        data-ground
+      />
+      <img
+        preload="metadata"
+        src="imgs/[forest] slow background.png"
+        class="ground"
+        data-ground
+      />
+      <img
+        preload="metadata"
+        src="imgs/dino-stationary.png"
+        class="dino"
+        data-dino
+      />
       <img
         src="/imgs/[forest] static background.png"
         class="background"
         id="background"
         alt=""
+        preload="metadata"
       />
     </div>
   </body>
