@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DINO</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/game/script.js" type="module"></script>
+  </head>
+  <body>
+    <audio
+      src="/audio/playsound1.mp3"
+      id="bgsound"
+      loop
+      preload="metadata"
+    ></audio>
+    <audio
+      src="/audio/playsound2.mp3"
+      id="bgsound2"
+      loop
+      preload="metadata"
+    ></audio>
+
+    <div class="score-wrap">
+      <span class="s-item">High: <span class="hiscore">0</span></span>
+      <span class="s-item">Score:<span class="score" data-score>0</span></span>
+    </div>
+    <div class="world" data-world>
+      <div class="start-screen" data-start-screen>Press Any Key To Start</div>
+      <img src="imgs/[forest] slow background.png" class="ground" data-ground />
+      <img src="imgs/[forest] slow background.png" class="ground" data-ground />
+      <img src="imgs/dino-stationary.png" class="dino" data-dino />
+      <img
+        src="/imgs/[forest] static background.png"
+        class="background"
+        id="background"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

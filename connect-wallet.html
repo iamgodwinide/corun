@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/mapping.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <title>Cockrun website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="score">High Score: 0</div>
+      <div class="wallet-wrap">
+        <div>X username: <span id="usernameText">none</span></div>
+        Wallet Address: <span id="wallet">none</span>
+        <button class="hide" id="disconnect">disconnect</button>
+        <button class="" id="connect">connect</button>
+      </div>
+    </nav>
+
+    <img
+      src="/imgs/pages/Connect desktop.png"
+      class="desktop"
+      usemap="image-map"
+    />
+    <img
+      src="/imgs/pages/connect mobile.png"
+      usemap="image-map2"
+      class="mobile"
+    />
+
+    <a href="#" class="box" id="box1"></a>
+    <a href="#" class="box" id="box2"></a>
+    <a href="#" class="box" id="box3"></a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt=""
+        title=""
+        coords="1057,313,1569,441"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt=""
+        title=""
+        coords="1029,498,1547,618"
+        shape="rect"
+      />
+      <area
+        id="area3"
+        target=""
+        alt=""
+        title=""
+        coords="989,791,1791,1002"
+        shape="rect"
+      />
+    </map>
+
+    <map name="image-map2">
+      <area
+        id="area4"
+        target=""
+        alt=""
+        title=""
+        coords="562,961,1067,1080"
+        shape="rect"
+      />
+      <area
+        id="area5"
+        target=""
+        alt=""
+        title=""
+        coords="551,1131,1040,1263"
+        shape="rect"
+      />
+      <area
+        id="area6"
+        target=""
+        alt=""
+        title=""
+        coords="276,1412,1078,1601"
+        shape="rect"
+      />
+    </map>
+
+    <div class="modal hide" id="modal">
+      <h1>Choose venue</h1>
+      <div class="options">
+        <a href="/game.html" id="openForest">
+          <div class="option">
+            <img src="/imgs/[forest] static background.png" alt="" />
+            <p>Forest</p>
+          </div>
+        </a>
+        <a href="/game2.html" id="openDesert">
+          <div class="option">
+            <img src="/imgs/[desert] static bg.png" alt="" />
+            <p>Desert</p>
+          </div>
+        </a>
+      </div>
+      <br />
+      <button id="cancel" class="cancel">cancel</button>
+    </div>
+
+    <div class="modal modal2 hide" id="modal2">
+      <div class="modal-overlay"></div>
+      <h1>Enter your twitter username</h1>
+      <div class="modal-inputs">
+        <input id="username" type="text" placeholder="@username" />
+        <button id="save">save</button>
+        <button id="cancel2" class="cancel">cancel</button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/js/mapping.js"></script>
+    <script src="/js/connectWallet.js"></script>
+    <script src="/js/connectTwitter.js"></script>
+  </body>
+</html>

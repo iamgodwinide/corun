@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/mapping.css" />
+    <title>Cockrun website</title>
+  </head>
+  <body>
+    <img
+      src="/imgs/pages/meme cat game.png"
+      class="desktop"
+      usemap="image-map"
+    />
+    <img
+      src="/imgs/pages/cocks of fame.png"
+      usemap="image-map2"
+      class="mobile"
+    />
+
+    <a href="/most-popular-cocks.html" class="box" id="box1"></a>
+    <a href="/highest-score-page.html" class="box" id="box2"></a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="687,106,1276,310"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="709,432,1211,556"
+        shape="rect"
+      />
+    </map>
+
+    <map name="image-map2">
+      <area
+        id="area3"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="240,620,846,790"
+        shape="rect"
+      />
+      <area
+        id="area4"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="253,927,761,1054"
+        shape="rect"
+      />
+    </map>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/js/mapping.js"></script>
+  </body>
+</html>

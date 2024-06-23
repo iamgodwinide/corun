@@ -1,0 +1,25 @@
+.box {
+    position: absolute;
+    /* border: 2px solid rgba(0, 0, 0, 0.169); */
+    animation-name: blink;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    z-index: 10;
+    opacity: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000 !important;
+}
+
+
+@keyframes blink {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
